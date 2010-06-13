@@ -1,5 +1,24 @@
 #!/usr/bin/env ruby
 
+# Installation
+#  1. git clone git://github.com/jjb/twitter.rb.git
+#  2. edit the script and replace my usernamne (johnjoseph) with yours
+#  2. ln -s twitter.rb/twitter ~/bin/twitter
+#
+#  OR: just copy this script from this webpage and paste it into a text editor and save it as ~/bin/twitter (and chmod it to 755)
+#
+#
+# Usage
+#  $ twitter 'I am tweating from the command line!'
+#
+# Keychain will ask you for permission for the script to access
+# your twitter password. Click "Allow" or "Always allow"
+
+# Problem: http://apiwiki.twitter.com/ tells me that basic authentication is
+# being discontinued June 2010 (this month!). I've done twitter oauth
+# authentication, but how does the typical Twitter password-requesting
+# desktop app authenticate? If anyone knows, let me know. Thanks!
+
 password = `security 2>&1 >/dev/null find-internet-password -g -s 'twitter.com' -a 'johnjoseph' | cut -d '"' -f 2`.strip
 
 message = ARGV[0]
