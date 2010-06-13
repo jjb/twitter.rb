@@ -3,13 +3,16 @@ twitter.rb
 
 Installation
 ------------
- 1. `git clone git://github.com/jjb/twitter.rb.git`
- 2. Edit the script to use your username.
- 3. `ln -s twitter.rb/twitter ~/bin/twitter``
+1. `git clone git://github.com/jjb/twitter.rb.git`
+2. Edit the script to use your username.
+3. `ln -s twitter.rb/twitter ~/bin/twitter``
+4. `chmod 755 ~/bin/twitter`
 
  **or**
 
-1. Copy the script from the webpage and paste it into a text editor and save it as ~/bin/twitter (and chmod to 755)
+1. Copy the script from [the web rendering](http://github.com/jjb/twitter.rb/blob/master/twitter)
+2. paste it into a text editor and save it as ~/bin/twitter
+3. `chmod 755 ~/bin/twitter`
 
 
 Usage
