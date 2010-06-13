@@ -9,6 +9,6 @@ curl \
   --stderr '/dev/null' \
   --write-out "%{http_code}" \
   -u johnjoseph:#{password} \
-  -d status=#{message} \
+  -d status='#{message}' \
   https://twitter.com/statuses/update.xml
 `
