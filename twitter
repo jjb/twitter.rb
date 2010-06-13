@@ -17,7 +17,14 @@
 # Problem: http://apiwiki.twitter.com/ tells me that basic authentication is
 # being discontinued June 2010 (this month!). I've done twitter oauth
 # authentication, but how does the typical Twitter password-requesting
-# desktop app authenticate? If anyone knows, let me know. Thanks!
+# desktop app authenticate? I guess they all got xAuth permission?
+# See lower right here:
+#   http://dev.twitter.com/pages/auth_overview
+#
+# Somehow seems unlikely that ALL desktop apps do this, since it's
+# described as "least desirable:".
+#
+# If anyone knows, let me know. Thanks!
 
 password = `security 2>&1 >/dev/null find-internet-password -g -s 'twitter.com' -a 'johnjoseph' | cut -d '"' -f 2`.strip
 
