@@ -1,11 +1,13 @@
-#!/env/ruby
+#!/usr/bin/env ruby
 
 password = `security 2>&1 >/dev/null find-internet-password -g -s 'twitter.com' -a 'johnjoseph' | cut -d '"' -f 2`.strip
 
 message = ARGV[0]
 
-`
+print `
 curl \
+  --stderr '/dev/null' \
+  --write-out "%{http_code}" \
   -u johnjoseph:#{password} \
   -d status=#{message} \
   https://twitter.com/statuses/update.xml
