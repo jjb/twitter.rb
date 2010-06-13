@@ -16,7 +16,7 @@ Usage
 
 Keychain will ask you for permission for the script to access your twitter password. Click "Allow" or "Always allow".
 
-Problem: http://apiwiki.twitter.com tells me that basic authentication is being discontinued June 2010 (this month!). I've done twitter oauth authentication, but how does the typical Twitter password-requesting desktop app authenticate? I guess they all got xAuth permission? See lower right [here](http://dev.twitter.com/pages/auth_overview).
+Problem: http://apiwiki.twitter.com/ tells me that basic authentication is being discontinued June 2010 (this month!). I've done twitter oauth authentication, but how does the typical Twitter password-requesting desktop app authenticate? I guess they all got xAuth permission? See lower right [here](http://dev.twitter.com/pages/auth_overview).
 
 It somehow seems unlikely that ALL desktop apps do this, since it's described as "least desirable".
 
